@@ -17,6 +17,19 @@ public class volcano
     
     
    public volcano(){
-       
+      // initialise instance variables
+        this.height = 0;
+        this.age = 0;
+        this.name = "TBD";
+        this.VEI = 0;
+        this.temperature = 0;
+    }
+    
+    public SuperVolcano(int height, int age, String name, byte vei, int temp){
+        this.height = height;
+        this.age = age;
+        this.name = name;
+        this.VEI = vei;
+        this.temperature = temp; 
    }
 }
