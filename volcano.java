@@ -1,23 +1,27 @@
 
+
 /**
- * Write a description of class volcano here.
+ * Write a description of class SuperVolcano here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author 
+ * @version Jan 18, 2021
  */
-public class volcano
+public class SuperVolcano
 {
-    
-    int height; 
+    // instance variables - replace the example below with your own
+    int height;
     int age;
-    int temperature;
-    byte VEI;
     String name;
+    byte VEI;
+    int temperature;
     
-    
-    
-   public volcano(){
-      // initialise instance variables
+
+    /**
+     * Constructor for objects of class SuperVolcano
+     */
+    public SuperVolcano()
+    {
+        // initialise instance variables
         this.height = 0;
         this.age = 0;
         this.name = "TBD";
@@ -30,6 +34,6 @@ public class volcano
         this.age = age;
         this.name = name;
         this.VEI = vei;
-        this.temperature = temp; 
-   }
+        this.temperature = temp;
+    }
 }
