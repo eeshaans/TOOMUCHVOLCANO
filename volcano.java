@@ -1,5 +1,3 @@
-
-
 /**
  * Write a description of class SuperVolcano here.
  *
@@ -14,8 +12,9 @@ public class SuperVolcano
     String name;
     byte VEI;
     int temperature;
-    boolean safe;
     boolean extinct;
+    boolean safe;
+    
 
     /**
      * Constructor for objects of class SuperVolcano
@@ -28,18 +27,26 @@ public class SuperVolcano
         this.name = "TBD";
         this.VEI = 0;
         this.temperature = 0;
+        this.extinct = false;
+        this.safe = true;
     }
     
-    public SuperVolcano(int height, int age, String name, byte vei, int temp){
+    public SuperVolcano(String name, int height, int age, byte vei, int temp, boolean e, boolean s){
         this.height = height;
         this.age = age;
         this.name = name;
         this.VEI = vei;
         this.temperature = temp;
+        this.extinct = e;
+        this.safe = s;
     }
     
+    public String toString(){
+        return "Name " + this.name + "\nheight " + this.height + "\nage: " + this.age + 
+        "\nVEI: " + this.VEI + "\ntemperature " + this.temperature + "\nextinct? " + this.extinct + "\nsafe? " + this.safe;
+    }
     
-    public boolean VolcanoSafety()
+     public boolean VolcanoSafety()
     {
         if (this.extinct == true)
         {
@@ -53,4 +60,5 @@ public class SuperVolcano
         
         return false ;
     }
+    
 }
