@@ -36,4 +36,20 @@ public class SuperVolcano
         this.VEI = vei;
         this.temperature = temp;
     }
+    
+    
+    public boolean VolcanoSafety()
+    {
+        if (this.extinct == true)
+        {
+            return true ;
+        }
+        
+        if (this.temperature < 400 && this.VEI < 2)
+        {
+            return true ;
+        }
+        
+        return false ;
+    }
 }
