@@ -14,7 +14,8 @@ public class SuperVolcano
     String name;
     byte VEI;
     int temperature;
-    
+    boolean safe;
+    boolean extinct;
 
     /**
      * Constructor for objects of class SuperVolcano
