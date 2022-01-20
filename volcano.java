@@ -52,13 +52,13 @@ public class SuperVolcano
         {
             this.safe = true ;
         }
-        
-        if (this.temperature < 400 && this.VEI < 2)
+        else if (this.temperature < 400 && this.VEI < 2)
         {
             this.safe = true ;
         }
-        
+        else {
         this.safe = false ;
+        }
     }
     
 }
