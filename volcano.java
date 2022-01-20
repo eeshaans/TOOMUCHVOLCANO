@@ -46,19 +46,19 @@ public class SuperVolcano
         "\nVEI: " + this.VEI + "\ntemperature " + this.temperature + "\nextinct? " + this.extinct + "\nsafe? " + this.safe;
     }
     
-     public boolean VolcanoSafety()
+     public void VolcanoSafety()
     {
         if (this.extinct == true)
         {
-            return true ;
+            this.safe = true ;
         }
         
         if (this.temperature < 400 && this.VEI < 2)
         {
-            return true ;
+            this.safe = true ;
         }
         
-        return false ;
+        this.safe = false ;
     }
     
 }
